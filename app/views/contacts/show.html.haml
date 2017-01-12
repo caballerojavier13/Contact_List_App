@@ -1,0 +1,39 @@
+%p#notice= notice
+
+%p
+  %b First name:
+  = @contact.first_name
+%p
+  %b Last name:
+  = @contact.last_name
+%p
+  %b Email:
+  = @contact.email
+%p
+  %b Mobile:
+  = @contact.mobile
+%p
+  %b Home phone:
+  = @contact.home_phone
+%p
+  %b Office phone:
+  = @contact.office_phone
+%p
+  %b Street address:
+  = @contact.street_address
+%p
+  %b City:
+  = @contact.city
+%p
+  %b State:
+  = @contact.state
+%p
+  %b Country:
+  = @contact.country
+%p
+  %b Permalink:
+  = @contact.permalink
+
+= link_to 'Edit', edit_contact_path(@contact)
+\|
+= link_to 'Back', contacts_path
