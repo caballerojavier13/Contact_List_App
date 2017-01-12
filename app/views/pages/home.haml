@@ -1,0 +1,19 @@
+.jumbotron
+	.container
+		%h2 Contacts
+.container
+	/ Example row of columns
+	.row
+		- @contacts.each do |c|
+			.col-md-4
+				.panel
+					%h2= c.full_name
+					%p= c.email
+					%p= c.mobile
+					%p
+						%a.btn.btn-default{:href => "#", :role => "button"} View details »
+
+	%hr/
+	%footer
+		%p © 2016 Company, Inc.
+
