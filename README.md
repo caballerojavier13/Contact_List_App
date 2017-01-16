@@ -1,5 +1,7 @@
 # contact-list
 
+[![wercker status](https://app.wercker.com/status/ee03d99f23ec60a5d45acea4b246552b/s/master "wercker status")](https://app.wercker.com/project/byKey/ee03d99f23ec60a5d45acea4b246552b)
+
 basic dockerized contact-list app
 
 * System dependencies
