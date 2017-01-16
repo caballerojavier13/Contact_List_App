@@ -1,4 +1,4 @@
-require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe "contacts/new", type: :view do
   before(:each) do
@@ -42,7 +42,6 @@ RSpec.describe "contacts/new", type: :view do
 
       assert_select "input#contact_country[name=?]", "contact[country]"
 
-      assert_select "input#contact_permalink[name=?]", "contact[permalink]"
     end
   end
 end

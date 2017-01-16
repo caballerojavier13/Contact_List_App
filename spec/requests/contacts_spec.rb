@@ -1,4 +1,4 @@
-require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe "Contacts", type: :request do
   describe "GET /contacts" do
