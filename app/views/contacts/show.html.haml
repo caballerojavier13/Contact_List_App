@@ -1,38 +1,61 @@
 %p#notice= notice
 
-%p
-  %b First name:
-  = @contact.first_name
-%p
-  %b Last name:
-  = @contact.last_name
-%p
-  %b Email:
-  = @contact.email
-%p
-  %b Mobile:
-  = @contact.mobile
-%p
-  %b Home phone:
-  = @contact.home_phone
-%p
-  %b Office phone:
-  = @contact.office_phone
-%p
-  %b Street address:
-  = @contact.street_address
-%p
-  %b City:
-  = @contact.city
-%p
-  %b State:
-  = @contact.state
-%p
-  %b Country:
-  = @contact.country
-%p
-  %b Permalink:
-  = @contact.permalink
+%table.table
+  %tr
+    %td
+      %b First name:
+    %td
+      = @contact.first_name
+  %tr
+    %td
+      %b Last name:
+    %td
+      = @contact.last_name
+  %tr
+    %td
+      %b Email:
+    %td      
+      = @contact.email
+  %tr
+    %td
+      %b Mobile:
+    %td      
+      = @contact.mobile
+  %tr
+    %td
+      %b Home phone:
+    %td      
+      = @contact.home_phone
+  %tr
+    %td
+      %b Office phone:
+    %td      
+      = @contact.office_phone
+  %tr
+    %td
+      %b Street address:
+    %td      
+      = @contact.street_address
+  %tr
+    %td
+      %b City:
+    %td      
+      = @contact.city
+  %tr
+    %td
+      %b State:
+    %td      
+      = @contact.state
+  %tr
+    %td
+      %b Country:
+    %td      
+      = @contact.country
+  %tr
+    %td
+      %b Permalink:
+    %td      
+      = @contact.permalink
 
 = link_to 'Edit', edit_contact_path(@contact)
 \|
