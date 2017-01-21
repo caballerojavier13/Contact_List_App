@@ -1,5 +1,9 @@
 class ContactsController < ApplicationController
+  # hooks
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
+
+  # utilities
+  add_breadcrumb "index", :contacts_path
 
   # GET /contacts
   def index
@@ -8,15 +12,18 @@ class ContactsController < ApplicationController
 
   # GET /contacts/1
   def show
+    add_breadcrumb "show", contact_path(@contact)
   end
 
   # GET /contacts/new
   def new
     @contact = Contact.new
+    add_breadcrumb "new", :new_contact_path
   end
 
   # GET /contacts/1/edit
   def edit
+    add_breadcrumb "edit-#{@contact.permalink}", edit_contact_path(@contact)
   end
 
   # POST /contacts

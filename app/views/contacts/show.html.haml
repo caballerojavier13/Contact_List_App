@@ -1,12 +1,9 @@
-%p#notice= notice
+%p#notice.bg-success= notice
 
 = link_to edit_contact_path(@contact) do
   .btn.btn-success
+    %i.fa.fa-edit
     %span Edit
-|
-= link_to contacts_path do
-  .btn.btn-primary
-    %span Back
 
 %br
 %br

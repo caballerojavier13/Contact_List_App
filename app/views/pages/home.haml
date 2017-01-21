@@ -1,9 +1,4 @@
 .container
-	%h2 Contacts
-	%span
-		%a.btn.btn-primary.btn-medium{:href => new_contact_path, :role => "button"} Add
-%hr
-.container
 	/ Example row of columns
 	.row
 		- @contacts.each do |c|
@@ -13,6 +8,6 @@
 					%p= c.email
 					%p= c.mobile
 					%p
-						%a.btn.btn-default{:href => contact_path(id: c.id), :role => "button"} View details »
+						%a.btn.btn-default.alert-info{:href => contact_path(id: c.id), :role => "button"} View details »
 
 

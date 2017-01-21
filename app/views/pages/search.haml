@@ -1,52 +1,5 @@
 %h1= "Search results for: '#{ @query }'"
 
-= link_to new_contact_path do
-  .btn.btn-primary.btn-block
-    %span New Contact
+= render partial: 'contacts/contact_list', locals: { contacts: @contacts }
 
-%table.table
-  %thead
-    %tr
-      %th First name
-      %th Last name
-      %th Email
-      %th Mobile
-      %th Home phone
-      %th Office phone
-      %th Street address
-      %th City
-      %th State
-      %th Country
-      %th Permalink
-      %th
-      %th
-      %th
 
-  %tbody
-    - @contacts.each do |contact|
-      %tr
-        %td= contact.first_name
-        %td= contact.last_name
-        %td= contact.email
-        %td= contact.mobile
-        %td= contact.home_phone
-        %td= contact.office_phone
-        %td= contact.street_address
-        %td= contact.city
-        %td= contact.state
-        %td= contact.country
-        %td= contact.permalink
-        %td
-          = link_to contact do
-            .btn.btn-info
-              %span Show
-        %td
-          = link_to edit_contact_path(contact) do
-            .btn.btn-success
-              %span Edit
-        %td
-          = link_to contact, :method => :delete, :data => { :confirm => 'Are you sure?' } do
-            .btn.btn-danger
-              %span Destroy
-
-%br
