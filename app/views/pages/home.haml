@@ -1,8 +1,8 @@
-.jumbotron
-	.container
-		%h2 Contacts
-		%p
-			%a.btn.btn-primary.btn-lg{:href => new_contact_path, :role => "button"} Add		
+.container
+	%h2 Contacts
+	%span
+		%a.btn.btn-primary.btn-medium{:href => new_contact_path, :role => "button"} Add
+%hr
 .container
 	/ Example row of columns
 	.row
@@ -15,7 +15,4 @@
 					%p
 						%a.btn.btn-default{:href => contact_path(id: c.id), :role => "button"} View details »
 
-	%hr/
-	%footer
-		%p © 2017 Company, Inc.
 

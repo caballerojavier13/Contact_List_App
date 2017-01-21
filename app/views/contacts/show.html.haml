@@ -1,5 +1,15 @@
 %p#notice= notice
 
+= link_to edit_contact_path(@contact) do
+  .btn.btn-success
+    %span Edit
+|
+= link_to contacts_path do
+  .btn.btn-primary
+    %span Back
+
+%br
+%br
 %table.table
   %tr
     %td
@@ -14,49 +24,46 @@
   %tr
     %td
       %b Email:
-    %td      
+    %td
       = @contact.email
   %tr
     %td
       %b Mobile:
-    %td      
+    %td
       = @contact.mobile
   %tr
     %td
       %b Home phone:
-    %td      
+    %td
       = @contact.home_phone
   %tr
     %td
       %b Office phone:
-    %td      
+    %td
       = @contact.office_phone
   %tr
     %td
       %b Street address:
-    %td      
+    %td
       = @contact.street_address
   %tr
     %td
       %b City:
-    %td      
+    %td
       = @contact.city
   %tr
     %td
       %b State:
-    %td      
+    %td
       = @contact.state
   %tr
     %td
       %b Country:
-    %td      
+    %td
       = @contact.country
   %tr
     %td
       %b Permalink:
-    %td      
+    %td
       = @contact.permalink
 
-= link_to 'Edit', edit_contact_path(@contact)
-\|
-= link_to 'Back', contacts_path

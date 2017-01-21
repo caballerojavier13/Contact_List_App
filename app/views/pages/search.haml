@@ -1,4 +1,4 @@
-%h1 Listing contacts
+%h1= "Search results for: '#{ @query }'"
 
 = link_to new_contact_path do
   .btn.btn-primary.btn-block
@@ -50,4 +50,3 @@
               %span Destroy
 
 %br
-
