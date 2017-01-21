@@ -2,6 +2,19 @@
 %html
 	%head
 		%meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+		%meta{:content => "contact list", :name => "description"}
+		%meta{:content => "contact-list contacts address phone-number mobile", :name => "keywords"}
+		%meta{:charset => "utf-8"}
+		%meta{:content => "array101", :name => "author"}
+
+		/[if IE]
+		%meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+
+		%meta{:content => "width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0", :name => "viewport"}
+
+		/ Favicons
+		%link{:href => asset_path("conxjobsv2/favicon.ico"), :rel => "shortcut icon"}
+
 		%title ContactList
 		= csrf_meta_tags
 		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
