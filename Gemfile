@@ -31,7 +31,7 @@ gem 'turbolinks', '~> 5'
 group :development, :test do
   gem 'spring'
   gem 'pry'
-  
+  gem 'listen'
   gem 'rspec-rails'
   gem 'rails-controller-testing'
   gem 'capybara'
