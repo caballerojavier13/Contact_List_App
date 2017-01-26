@@ -1,0 +1,12 @@
+{
+  "name": "contact-list",
+  "version": "1.0.0",
+  "description": "CRUD contacts",
+  "main": "index.js",
+  "repository": "git@github.com:sa77/contact-list.git",
+  "author": "sa77",
+  "license": "beerware-licence",
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

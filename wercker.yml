@@ -13,7 +13,7 @@ build:
     - install-packages:
         name: Install node.js, build-essential, libpq-dev
         packages: build-essential libpq-dev nodejs
-    
+
     - script:
         name: echo ruby information
         code: |
@@ -28,3 +28,8 @@ build:
         name: rspec
         code: bundle exec rspec
 
+dockerize:
+  steps:
+    - script:
+        name: dockerhub-trigger
+        code: $DOCKER_HUB_TRIGGER

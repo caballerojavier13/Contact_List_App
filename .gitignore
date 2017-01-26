@@ -18,3 +18,7 @@
 
 # coverage
 coverage
+
+# yarn stuff
+vendor/assets/components/
+

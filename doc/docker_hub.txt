@@ -1,0 +1,9 @@
+hub.docker.com - one of the repositories for docker images (others are also available)
+
+- link your github/bitbucket account to docker from settings -> linked accounts and services
+- create -> create automated build repo from nav bar
+	- looks like regular repos but few more features
+	- linked with github/bitbucket repo
+	- any new update on github/bitbucket pings docker hub about the change and dockerhub builds new image
+
+
