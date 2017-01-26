@@ -31,5 +31,6 @@ build:
 dockerize:
   steps:
     - script:
-        name: dockerhub-trigger
-        code: $DOCKER_HUB_TRIGGER
+        name: dockerhub-push
+        code: |
+          curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/$DOCKER_REPO/trigger/$DOCKER_HUB_TRIGGER/
