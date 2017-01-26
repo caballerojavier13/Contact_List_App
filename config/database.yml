@@ -1,22 +1,30 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  min_messages: WARNING
   pool: 50
   timeout: 5000
+
+# development:
+#   <<: *default
+#   database: contact_list_development
+#   host: localhost
+#   username: devuser
+#   password: devuser
 
 development:
   <<: *default
   database: contact_list_development
-  host: localhost
-  username: devuser
-  password: devuser
+  host: db
+  username: postgres
+  # password: devuser
 
 test:
   <<: *default
   database: contact_list_test
-  host: localhost
-  username: devuser
-  password: devuser
+  host: db
+  username: postgres
+  # password: devuser
 
 production:
   <<: *default

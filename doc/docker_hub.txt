@@ -5,5 +5,13 @@ hub.docker.com - one of the repositories for docker images (others are also avai
 	- looks like regular repos but few more features
 	- linked with github/bitbucket repo
 	- any new update on github/bitbucket pings docker hub about the change and dockerhub builds new image
+	- configure dockerize pipeline on wercker CI to add curl POST hook to dockerhub on wercker.yml
+
+		dockerize:
+		  steps:
+		    - script:
+		        name: dockerhub-push
+		        code: |
+		          curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/$DOCKER_REPO/trigger/$DOCKER_HUB_TRIGGER/
 
 
