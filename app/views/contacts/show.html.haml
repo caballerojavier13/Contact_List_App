@@ -1,13 +1,16 @@
 %p#notice.bg-success= notice
 
-= link_to edit_contact_path(@contact) do
-  .btn.btn-success
+.pull-right
+  = link_to edit_contact_path(@contact), :class => 'btn btn-warning' do
     %i.fa.fa-edit
     %span Edit
+  = link_to @contact, :method => :delete, :class => 'btn btn-danger' , :title => 'Delete', :data => { :confirm => 'Are you sure?' } do
+    %i.fa.fa-trash
+    %span Delete
 
 %br
 %br
-%table.table
+%table.table.table-bordered
   %tr
     %td
       %b First name:

@@ -5,26 +5,19 @@ default: &default
   pool: 50
   timeout: 5000
 
-# development:
-#   <<: *default
-#   database: contact_list_development
-#   host: localhost
-#   username: devuser
-#   password: devuser
-
 development:
   <<: *default
   database: contact_list_development
-  host: db
-  username: postgres
-  # password: devuser
+  host: localhost
+  username: devuser
+  password: devuser
 
 test:
   <<: *default
   database: contact_list_test
-  host: db
-  username: postgres
-  # password: devuser
+  host: localhost
+  username: devuser
+  password: devuser
 
 production:
   <<: *default

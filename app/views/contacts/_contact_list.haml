@@ -2,50 +2,33 @@
 - if @contacts.empty?
   .alert.alert-danger No contacts
 - else
-  %table.table
+  %table.table.table-striped
     %thead
       %tr
-        %th First name
-        %th Last name
+        %th Full Name
         %th Email
         %th Mobile
         %th Home phone
         %th Office phone
-        %th Street address
-        %th City
-        %th State
-        %th Country
-        %th
-        %th
-        %th
-
+        %th Address
+        %th Actions
     %tbody
       - contacts.each do |contact|
         %tr
-          %td= contact.first_name
-          %td= contact.last_name
-          %td= contact.email
-          %td= contact.mobile
-          %td= contact.home_phone
-          %td= contact.office_phone
-          %td= contact.street_address
-          %td= contact.city
-          %td= contact.state
-          %td= contact.country
+          %td= link_to "#{contact.full_name || '-'}", contact
+          %td= contact.email || '-'
+          %td= contact.mobile || '-'
+          %td= contact.home_phone.presence || '-'
+          %td= contact.office_phone.presence || '-'
+          %td= contact.street_address || '-'
           %td
-            = link_to contact do
-              .btn.btn-info
-                %i.fa.fa-eye
-                %span Show
-          %td
-            = link_to edit_contact_path(contact) do
-              .btn.btn-success
-                %i.fa.fa-edit
-                %span Edit
-          %td
-            = link_to contact, :method => :delete, :data => { :confirm => 'Are you sure?' } do
-              .btn.btn-danger
-                %i.fa.fa-trash
-                %span Destroy
+            = link_to contact, :class => 'btn btn-xs btn-info' , :title => 'View'  do
+              %i.fa.fa-eye
+            %span
+            = link_to edit_contact_path(contact), :class => 'btn btn-xs btn-warning' , :title => 'Edit' do
+              %i.fa.fa-edit
+            %span
+            = link_to contact, :method => :delete, :class => 'btn btn-xs btn-danger' , :title => 'Delete', :data => { :confirm => 'Are you sure?' } do
+              %i.fa.fa-trash
 
 %br
