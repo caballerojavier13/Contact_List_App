@@ -16,8 +16,8 @@ test:
   <<: *default
   database: contact_list_test
   host: localhost
-  username: devuser
-  password: devuser
+  username: contact_list
+  password: contact_list
 
 production:
   <<: *default
