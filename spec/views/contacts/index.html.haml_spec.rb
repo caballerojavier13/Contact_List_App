@@ -40,8 +40,5 @@ RSpec.describe "contacts/index", type: :view do
     assert_select "tr>td", :text => "Home Phone".to_s, :count => 2
     assert_select "tr>td", :text => "Office Phone".to_s, :count => 2
     assert_select "tr>td", :text => "Street Address".to_s, :count => 2
-    assert_select "tr>td", :text => "City".to_s, :count => 2
-    assert_select "tr>td", :text => "State".to_s, :count => 2
-    assert_select "tr>td", :text => "Country".to_s, :count => 2
   end
 end
