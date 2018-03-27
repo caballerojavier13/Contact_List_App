@@ -27,14 +27,3 @@ build:
     - script:
         name: rspec
         code: bundle exec rspec
-
-dockerize:
-  steps:
-    - script:
-        name: dockerhub-push
-        code: |
-          curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/$DOCKER_REPO/trigger/$DOCKER_HUB_TRIGGER/
-
-commit-checker:
-  steps:
-    - starefossen/git-commit-check@1.0.0
