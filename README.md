@@ -1,7 +1,6 @@
 # contact-list
 
-[![wercker status](https://app.wercker.com/status/ee03d99f23ec60a5d45acea4b246552b/s/master "wercker status")](https://app.wercker.com/project/byKey/ee03d99f23ec60a5d45acea4b246552b)
-
+[![wercker status](https://app.wercker.com/status/8911385c5cdbc691a9588832b56a7640/s/master "wercker status")](https://app.wercker.com/project/byKey/8911385c5cdbc691a9588832b56a7640)
 basic dockerized contact-list app
 
 * System dependencies
@@ -16,7 +15,7 @@ basic dockerized contact-list app
 
   - db create/migrate
 
-    `bundle exec rake rake db:create RAILS_ENV=test`
+    `bundle exec rake db:create RAILS_ENV=test`
 
-    `bundle exec rake rake db:migrate RAILS_ENV=test`
+    `bundle exec rake db:migrate RAILS_ENV=test`
 
