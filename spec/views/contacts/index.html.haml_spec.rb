@@ -34,8 +34,7 @@ RSpec.describe "contacts/index", type: :view do
 
   it "renders a list of contacts" do
     render
-    assert_select "tr>td", :text => "First Name".to_s, :count => 2
-    assert_select "tr>td", :text => "Last Name".to_s, :count => 2
+    assert_select "tr>td", :text => "First Name Last Name".to_s, :count => 2
     assert_select "tr>td", :text => "Email".to_s, :count => 2
     assert_select "tr>td", :text => "Mobile".to_s, :count => 2
     assert_select "tr>td", :text => "Home Phone".to_s, :count => 2
