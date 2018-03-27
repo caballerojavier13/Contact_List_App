@@ -2,15 +2,23 @@ version: '2'
 services:
   db:
     image: postgres:9.5
+    environment:
+      - POSTGRES_USER=devuser
+      - POSTGRES_PASSWORD=devuser
+      - POSTGRES_DB=contact_list_test
     ports:
       - "5432:5432"
 
   web:
-    build: .
-    command: bin/rails server --port 3000 --binding 0.0.0.0
+    image: caballerojavier13/example_rails_crud:0.0.1
+    command: >
+      bash -c "sleep 10 && 
+               cd /contact-list &&  
+               bundle exec rake db:migrate &&
+               bin/rails server --port 3000 --binding 0.0.0.0"
+    environment:
+      - RAILS_ENV=test 
     ports:
       - "3000:3000"
     links:
       - db
-    volumes:
-      - .:/contact-list
