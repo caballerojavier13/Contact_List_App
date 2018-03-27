@@ -1,7 +1,8 @@
 # contact-list
 
 [![wercker status](https://app.wercker.com/status/8911385c5cdbc691a9588832b56a7640/s/master "wercker status")](https://app.wercker.com/project/byKey/8911385c5cdbc691a9588832b56a7640)
-basic dockerized contact-list app
+
+
 
 * System dependencies
 	- ruby => 2.3.1
