@@ -3,8 +3,8 @@ services:
   db:
     image: postgres:9.5
     environment:
-      - POSTGRES_USER=devuser
-      - POSTGRES_PASSWORD=devuser
+      - POSTGRES_USER=contact_list
+      - POSTGRES_PASSWORD=contact_list
       - POSTGRES_DB=contact_list_test
     ports:
       - "5432:5432"
