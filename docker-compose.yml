@@ -10,7 +10,7 @@ services:
       - "5432:5432"
 
   web:
-    image: caballerojavier13/example_rails_crud:0.0.1
+    image: caballerojavier13/contact_list_app:latest
     command: >
       bash -c "sleep 10 && 
                cd /contact-list &&  
