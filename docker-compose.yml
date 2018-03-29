@@ -2,6 +2,7 @@ version: '2'
 services:
   db:
     image: postgres:9.5
+    name: contact_list_db
     environment:
       - POSTGRES_USER=contact_list
       - POSTGRES_PASSWORD=contact_list
@@ -11,6 +12,7 @@ services:
 
   web:
     image: caballerojavier13/contact_list_app:latest
+    name: contact_list_app
     command: >
       bash -c "sleep 10 && 
                cd /contact-list &&  
