@@ -21,4 +21,4 @@ services:
     ports:
       - "3000:3000"
     links:
-      - db
+      - "db:contact-list_db"
