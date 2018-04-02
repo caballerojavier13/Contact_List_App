@@ -1,6 +1,8 @@
-# contact-list
-
+# Contact List - App
 [![wercker status](https://app.wercker.com/status/8911385c5cdbc691a9588832b56a7640/s/master "wercker status")](https://app.wercker.com/project/byKey/8911385c5cdbc691a9588832b56a7640)
+
+
+> Ruby on Rails example app to explain how to integrate docker with tests.
 
 
 
