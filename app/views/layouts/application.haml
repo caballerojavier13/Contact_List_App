@@ -30,15 +30,12 @@
 							%span.icon-bar
 							%span.icon-bar
 						%span
-							%a.navbar-brand{:href => root_path} contact-list
-							= link_to new_contact_path, :class => 'btn btn-default navbar-btn btn-primary btn-medium' do
-								%i.fa.fa-plus
-								%span Add Contact
+							%a.navbar-brand{:href => root_path, :id=> 'title_brand'} Contact List
 					#navbar.navbar-collapse.collapse
 						.navbar-form.navbar-right
 							= form_tag search_path, method: 'get' do
-								= text_field_tag :query, params[:query], :class => 'form-control', placeholder: 'Search for contact'
-								= submit_tag "Search", :class => 'btn btn-success'
+								= text_field_tag :query, params[:query], :class => 'form-control', placeholder: 'Search for contact', :id=> 'search_input'
+								= submit_tag "Search", :class => 'btn btn-success', :id=> 'search_submit'
 			%br
 			%br
 			%br
@@ -50,4 +47,4 @@
 				= yield
 			%hr/
 			%footer
-				%p.pull-right © 2017
+				%p.pull-right= "© #{Date.today.year.to_s}"

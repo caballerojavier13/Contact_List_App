@@ -23,7 +23,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts/1/edit
   def edit
-    add_breadcrumb "edit-#{@contact.permalink}", edit_contact_path(@contact)
+    add_breadcrumb "edit", edit_contact_path(@contact)
   end
 
   # POST /contacts

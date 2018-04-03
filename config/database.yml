@@ -9,8 +9,8 @@ development:
   <<: *default
   database: contact_list_development
   host: localhost
-  username: devuser
-  password: devuser
+  username: root
+  password: root
 
 test:
   <<: *default

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  root 'contacts#index'
   get '/search' => 'pages#search', as: :search
   resources :contacts
 end

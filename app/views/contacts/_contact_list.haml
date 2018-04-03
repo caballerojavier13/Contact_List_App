@@ -2,33 +2,25 @@
 - if @contacts.empty?
   .alert.alert-danger No contacts
 - else
-  %table.table.table-striped
+  %table.table.table-striped#table_contacts
     %thead
       %tr
         %th Full Name
         %th Email
         %th Mobile
-        %th Home phone
-        %th Office phone
-        %th Address
         %th Actions
     %tbody
       - contacts.each do |contact|
         %tr
-          %td= link_to "#{contact.full_name || '-'}", contact
-          %td= contact.email || '-'
-          %td= contact.mobile || '-'
-          %td= contact.home_phone.presence || '-'
-          %td= contact.office_phone.presence || '-'
-          %td= contact.street_address || '-'
+          %td.full_name= link_to "#{contact.full_name || '-'}", contact
+          %td.email= contact.email || '-'
+          %td.mobile= contact.mobile || '-'
           %td
-            = link_to contact, :class => 'btn btn-xs btn-info' , :title => 'View'  do
+            = link_to contact, :class => 'btn btn-xs btn-info show_contact' , :title => 'View'  do
               %i.fa.fa-eye
             %span
-            = link_to edit_contact_path(contact), :class => 'btn btn-xs btn-warning' , :title => 'Edit' do
+            = link_to edit_contact_path(contact), :class => 'btn btn-xs btn-warning edit_contact' , :title => 'Edit' do
               %i.fa.fa-edit
             %span
-            = link_to contact, :method => :delete, :class => 'btn btn-xs btn-danger' , :title => 'Delete', :data => { :confirm => 'Are you sure?' } do
+            = link_to contact, :method => :delete, :class => 'btn btn-xs btn-danger delete_contact' , :title => 'Delete', :data => { :confirm => 'Are you sure?' } do
               %i.fa.fa-trash
-
-%br

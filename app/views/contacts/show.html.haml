@@ -1,5 +1,8 @@
 %p#notice.bg-success= notice
 
+%h1.title View Contact
+%hr
+
 .pull-right
   = link_to edit_contact_path(@contact), :class => 'btn btn-warning' do
     %i.fa.fa-edit
@@ -31,36 +34,6 @@
       %b Mobile:
     %td
       = @contact.mobile
-  %tr
-    %td
-      %b Home phone:
-    %td
-      = @contact.home_phone
-  %tr
-    %td
-      %b Office phone:
-    %td
-      = @contact.office_phone
-  %tr
-    %td
-      %b Street address:
-    %td
-      = @contact.street_address
-  %tr
-    %td
-      %b City:
-    %td
-      = @contact.city
-  %tr
-    %td
-      %b State:
-    %td
-      = @contact.state
-  %tr
-    %td
-      %b Country:
-    %td
-      = @contact.country
   %tr
     %td
       %b Permalink:

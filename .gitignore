@@ -22,3 +22,5 @@ coverage
 # yarn stuff
 vendor/assets/components/
 
+.idea/
+tmp/

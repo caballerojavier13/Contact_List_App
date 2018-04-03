@@ -1,3 +1,10 @@
+%h1.title Contact List
+%hr
+
+= link_to new_contact_path, :class => 'btn btn-default navbar-btn btn-primary btn-medium', :id=> 'add_contact' do
+  %i.fa.fa-plus
+  %span Add Contact
+
 
 = render partial: 'contact_list', locals: { contacts: @contacts }
 
