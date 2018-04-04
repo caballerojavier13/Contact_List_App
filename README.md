@@ -2,7 +2,7 @@
 
 [![Build Status](http://46.101.232.222:8080/buildStatus/icon?job=Contact-List/Client_List_App)](http://46.101.232.222:8080/job/Contact-List/Client_List_App)
 
-[![Build Status](http://46.101.232.222:8080/buildStatus/icon?job=Contact-List/Run E2E Tests - Env_QA)](http://46.101.232.222:8080/job/Contact-List/Run E2E Tests - Env_QA)
+[![Build Status](http://46.101.232.222:8080/buildStatus/icon?job=Contact-List/Run%20E2E%20Tests%20-%20Env_QA)](http://46.101.232.222:8080/job/Contact-List/Run%20E2E%20Tests%20-%20Env_QA)
 
 > Ruby on Rails example app to explain how to integrate docker with tests.
 
