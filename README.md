@@ -1,6 +1,8 @@
 # Contact List - App
-[![wercker status](https://app.wercker.com/status/8911385c5cdbc691a9588832b56a7640/s/master "wercker status")](https://app.wercker.com/project/byKey/8911385c5cdbc691a9588832b56a7640)
 
+[![Build Status](http://46.101.232.222:8080/buildStatus/icon?job=Contact-List/Client_List_App)](http://46.101.232.222:8080/job/Contact-List/Client_List_App)
+
+[![Build Status](http://46.101.232.222:8080/buildStatus/icon?job=Contact-List/Run E2E Tests - Env_QA)](http://46.101.232.222:8080/job/Contact-List/Run E2E Tests - Env_QA)
 
 > Ruby on Rails example app to explain how to integrate docker with tests.
 
