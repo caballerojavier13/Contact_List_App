@@ -1,7 +1,6 @@
 # Contact List - App
 
-[![Build Status](http://138.68.74.4:8080/buildStatus/icon?job=Contact-List/Client_List_App)](http://138.68.74.4:8080/job/Contact-List/Client_List_App) [![Tests Status](http://138.68.74.4:8080/buildStatus/icon?job=Contact-List/Run%20E2E%20Tests%20-%20Env_QA)](http://138.68.74.4:8080/job/Contact-List/job/Run%20E2E%20Tests%20-%20Env_QA/)
-
+[![Build Status](http://138.68.74.4:8080/buildStatus/icon?job=Contact-List/Client_List_App)](http://138.68.74.4:8080/job/Contact-List/Client_List_App) 
 > Ruby on Rails example app to explain how to integrate docker with tests.
 
 
